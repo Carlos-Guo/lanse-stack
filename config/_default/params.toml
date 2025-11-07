@@ -146,6 +146,8 @@ repo = ""
 clientID = ""
 clientSecret = ""
 
+customCSS = ["css/override.css"]
+
 [comments.cusdis]
 host = ""
 id = ""
