@@ -1,0 +1,36 @@
+/* 清新浅蓝 · 覆盖常用元素色彩（Stack 主题通用选择器） */
+:root{
+  --accent:#5DA9E9;      /* 主蓝 */
+  --accent-hover:#3E92E3;/* 悬停蓝 */
+  --tint:#F2F7FF;        /* 微蓝背景 */
+}
+
+/* 链接与悬停 */
+a{ color: var(--accent); }
+a:hover{ color: var(--accent-hover); }
+
+/* 文章列表标题 */
+.post-title a{ color: var(--accent); }
+.post-title a:hover{ color: var(--accent-hover); }
+
+/* 导航/按钮（若主题带按钮样式） */
+button, .button, .btn, .btn-primary{
+  background: var(--accent);
+  border-color: var(--accent);
+  color: #fff;
+}
+button:hover, .button:hover, .btn:hover, .btn-primary:hover{
+  background: var(--accent-hover);
+  border-color: var(--accent-hover);
+}
+
+/* 选中高亮、提示背景 */
+mark, .badge, .chip{
+  background: var(--tint);
+  color: #1b3a57;
+}
+
+/* 卡片/块元素微蓝底（按需） */
+.card, .note, .callout{
+  background: var(--tint);
+}
