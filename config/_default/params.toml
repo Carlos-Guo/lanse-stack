@@ -4,6 +4,8 @@ mainSections = ["post"]
 rssFullContent = true
 favicon = "/favicon.png"
 
+customCSS = ["css/override.css"]
+
 [footer]
 since = 2020
 customText = ""
@@ -146,7 +148,6 @@ repo = ""
 clientID = ""
 clientSecret = ""
 
-customCSS = ["css/override.css"]
 
 [comments.cusdis]
 host = ""
