@@ -1,4 +1,23 @@
- 
+ <style>
+/* 仅在浅色模式下把整页背景改为清新浅蓝 */
+@media (prefers-color-scheme: light){
+  :root{
+    --page-bg:#F2F7FF;   /* 浅蓝背景：可改淡/深 */
+    --card-border:#E6EEF8; /* 卡片描边微蓝（可选） */
+  }
+  html, body{
+    background: var(--page-bg) !important; /* 关键：整页背景 */
+  }
+  /* 让容器不遮住 body 的背景（有些版本给容器设了白底） */
+  .container, .main, .page, .wrapper, .content{
+    background: transparent !important;
+  }
+  /* 可选：让文章卡片边框更柔和（不改卡片白底） */
+  .article, .article-list article, .card, .widget, .archive-item{
+    border-color: var(--card-border) !important;
+  }
+}
+</style>
 
 
 
