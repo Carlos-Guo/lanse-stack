@@ -1,0 +1,21 @@
+baseURL = "https://www.lansetiankong.space/"
+title = "蓝色天空"
+languageCode = "zh-cn"
+paginate = 10
+
+# 用 Hugo Modules 引入 Stack 主题（v3）
+[module]
+  [[module.imports]]
+    path = "github.com/CaiJimmy/hugo-theme-stack/v3"
+
+# 输出类型（首页含 RSS/JSON 便于后续做搜索/订阅）
+[outputs]
+  home = ["HTML", "RSS", "JSON"]
+
+[params]
+  mainSections = ["posts"]
+
+  [params.comments]
+    enabled = false
+    provider = ""
+
